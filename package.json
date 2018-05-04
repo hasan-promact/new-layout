@@ -1,0 +1,24 @@
+{
+  "name": "new-layout",
+  "version": "1.0.0",
+  "description": "One page layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasan-promact/new-layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasan-promact/new-layout/issues"
+  },
+  "homepage": "https://github.com/hasan-promact/new-layout#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp-cache": "^1.0.2",
+    "run-sequence": "^2.2.1"
+  }
+}

@@ -1,0 +1,255 @@
+/* Theme Variables */
+/* Theme Variables */
+/* Helper Mixins */
+/* Helper Mixins */
+html, body {
+  height: 100%; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+/* Navigation css */
+.navbar-brand img {
+  width: 170px; }
+  @media (max-width: 768px) {
+    .navbar-brand img {
+      width: 133px; } }
+
+.navbar.navbar-default {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 100%;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  z-index: 999; }
+
+.navbar-default .navbar-nav > li {
+  padding: 20px 15px; }
+  .navbar-default .navbar-nav > li > a {
+    color: #373737;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    padding: 0; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #EE660F;
+      border-bottom: 2px solid #EE660F; }
+  .navbar-default .navbar-nav > li.active > a {
+    color: #EE660F;
+    border-bottom: 2px solid #EE660F;
+    background: none; }
+    .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus {
+      color: #EE660F;
+      border-bottom: 2px solid #EE660F;
+      background: none; }
+
+/* Navigation css */
+/* Main Banner Css */
+.bannerarea {
+  height: 100%; }
+  .bannerarea #mainbanner {
+    height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+  .carousel-inner .slide-1 {
+    background-image: url(../images/banner-1.jpg); }
+  .carousel-inner .slide-2 {
+    background-image: url(../images/banner-2.jpg); }
+  .carousel-inner .slide-3 {
+    background-image: url(../images/banner-1.jpg); }
+  .carousel-inner .item {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.carousel-caption {
+  bottom: auto;
+  text-shadow: none;
+  top: 30%; }
+  .carousel-caption h1 {
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1300 - 300)));
+    text-transform: uppercase;
+    color: #373737;
+    font-weight: 600; }
+  .carousel-caption p {
+    font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1300 - 300)));
+    color: #373737; }
+  .carousel-caption .btn-default {
+    background: #EE660F;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    width: 185px;
+    height: 50px;
+    border: none;
+    line-height: 38px;
+    text-transform: uppercase; }
+
+/* Main Banner Css */
+/* About Section Css */
+.about-section {
+  padding: 40px 0 80px;
+  background: #000; }
+  .about-section h2 {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 35px;
+    font-weight: 600; }
+    @media (max-width: 768px) {
+      .about-section h2 {
+        margin-top: 30px;
+        line-height: 30px; } }
+  .about-section ul {
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px; }
+
+/* About Section Css */
+/* All Section headings Css */
+.section-heading {
+  text-align: center;
+  padding: 40px 20%;
+  position: relative;
+  margin-bottom: 40px; }
+  .section-heading::after {
+    border-bottom: 4px solid #EE660F;
+    width: 50px;
+    position: absolute;
+    content: "";
+    margin-left: -25px;
+    bottom: 20px; }
+  @media (max-width: 768px) {
+    .section-heading {
+      padding: 40px 0; } }
+  @media (min-width: 992px) and (max-width: 768px) {
+    .section-heading {
+      padding: 40px 10%; } }
+  @media (min-width: 1200px) {
+    .section-heading {
+      padding: 40px 20%; } }
+  .section-heading h1 {
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1300 - 300)));
+    text-transform: uppercase;
+    color: #EE660F;
+    font-weight: 600; }
+  .section-heading p {
+    color: #fff; }
+    .services-section .section-heading p {
+      color: #373737;
+      text-align: center; }
+
+/* All Section headings Css */
+/* Services Section Css */
+.services-section {
+  background: #F9F9F9;
+  padding: 40px 0 80px; }
+  .services-section h3 {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+    color: #373737;
+    margin: 20px 0;
+    line-height: 35px;
+    font-weight: 600; }
+  .services-section p {
+    font-size: 15px;
+    color: #373737;
+    line-height: 25px;
+    text-align: justify; }
+
+/* Services Section Css */
+/* Portfolio Section Css */
+.portfolio-section {
+  padding: 40px 0 80px;
+  background: #000; }
+
+.portfolio-block {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 30px; }
+  .portfolio-block .caption {
+    opacity: 0;
+    position: absolute;
+    width: 86%;
+    height: 86%;
+    top: 7%;
+    left: 7%;
+    background: rgba(16, 182, 221, 0.9);
+    color: #fff;
+    padding: 15px;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto; }
+    .portfolio-block .caption h4 {
+      font-weight: 700;
+      font-size: 20px; }
+    .portfolio-block .caption p {
+      font-size: 15px; }
+    .portfolio-block .caption i {
+      font-size: 100px; }
+      @media (max-width: 768px) {
+        .portfolio-block .caption i {
+          font-size: 60px; } }
+  .portfolio-block:hover .caption {
+    opacity: 1; }
+
+/* Portfolio Section Css */
+.row.owl-carousel {
+  margin-left: 0;
+  margin-right: 0; }
+
+/* Footer Subscribe Section Css */
+.footer {
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 60px 0; }
+  .footer::after {
+    content: "";
+    background: url(../images/about-pic.jpg) no-repeat center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  .footer h1 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0; }
+  .footer input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 15px;
+    height: 30px;
+    padding: 10px; }
+    .footer input:focus {
+      outline: none; }
+  .footer .btn-default {
+    background: #EE660F;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    width: 185px;
+    height: 50px;
+    border: none;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin-top: 30px; }
+
+/* Footer Subscribe Section Css */
